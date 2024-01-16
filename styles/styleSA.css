@@ -1,0 +1,637 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box;  
+ margin: 0;
+padding: 0;
+}
+
+@font-face {
+    font-family: "Chalet-LondonNineteenSixty";
+    src: url("https://db.onlinewebfonts.com/t/8ae90d1880a9e9a51d7810be9fe6f49e.eot");
+    src: url("https://db.onlinewebfonts.com/t/8ae90d1880a9e9a51d7810be9fe6f49e.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/8ae90d1880a9e9a51d7810be9fe6f49e.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/8ae90d1880a9e9a51d7810be9fe6f49e.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/8ae90d1880a9e9a51d7810be9fe6f49e.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/8ae90d1880a9e9a51d7810be9fe6f49e.svg#Chalet-LondonNineteenSixty")format("svg");
+}
+
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--Red-themecolor:#c72a00;
+	--Cream-themecolor: #fffcda;
+	--Blue-themecolor: #447cf0;
+	--Gray-themecolor: #dfe2e5;
+	
+
+}
+
+main > *{
+	padding:  0px;
+}
+
+section{
+	padding: 20px 20px;
+}
+
+
+ a {
+	text-decoration: none;
+}
+
+
+.sr-only:not(:focus):not(:active) {
+	clip: rect(0 0 0 0); 
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap; 
+	width: 1px;
+  }
+li {list-style-type: none;}
+
+p, a {
+	font-family:  "Chalet-LondonNineteenSixty";
+}
+
+/** Kleur Layout*******/
+
+header, 
+.intro,
+.BRIONVEGA section:first-of-type,
+.collections,
+.collections p {
+	background-color: var(--Cream-themecolor);
+	color: var(--Red-themecolor);
+}
+
+ .BRIONVEGA section:nth-of-type(2),
+.susfurniture  {
+	background-color: var(--Red-themecolor);
+	color: var(--Cream-themecolor);
+}
+
+.sblines,
+.press,
+footer  {
+	background-color: var(--Blue-themecolor);
+	color: var(--Gray-themecolor);
+
+}
+.max {
+background-image: url("/images/maxcollect.webp");
+color: var(--Cream-themecolor);
+background-size: cover;
+}
+footer,
+main section:nth-of-type(4) {
+	background-color:var(--Gray-themecolor) ;
+	color: var(--Blue-themecolor);
+}
+/********cat button*********/
+.sn {
+	background-color: var(--Cream-themecolor) ;
+	padding: .5em 1em ;
+	border-radius: 1.5em;
+	margin: 1em 0;
+}
+
+/***	HEADER *****************************************************************************************/
+
+header {
+	position: fixed;
+	top: 0;
+	display: flex;
+	flex-flow: row nowrap;
+	width: 100%;
+	border: 2px solid hotpink;
+	z-index: 3;
+	justify-content: space-between;
+}
+header nav{
+	display: flex;
+	flex-flow: row wrap;
+	
+}
+
+header button:first-of-type{
+	display: none;
+	
+
+	
+}
+header  button:first-of-type,
+header button:last-of-type{
+	background-color: #dfe2e500;
+	border: 0;
+	
+	
+}
+
+header ul {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	border: 2px solid hotpink;
+}
+
+header nav ul li {
+	padding: 1em;
+	align-items: center;
+ 	text-decoration: none;
+	
+}
+
+header nav ul li a {
+	color: #c72a00;
+}
+
+
+/****	INTRO SYMBOL HERO SECTION************/
+.intro { 
+padding: 0;
+margin: 0;
+display: grid;
+grid-template-columns:   1fr 1fr 2fr ;
+grid-template-rows:  2fr 1fr 1fr 1fr ;
+height: 100vh;
+top: 0;
+}
+
+.intro hgroup {
+grid-column: 1 / -1;
+grid-row: 1/2;
+
+color: #c72a00;
+
+
+letter-spacing: -.1em;
+z-index: 2;
+position: relative;
+}
+
+.intro div{
+	grid-column: 3 / -1;
+   	grid-row: 1/ -1;
+
+
+
+ z-index: 1;
+ position: relative;
+}
+
+.intro img {
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+}
+
+.intro h3 {
+grid-column: 1 / 2;
+	grid-row: 3/4 ;}
+
+.intro p {
+grid-column: 2 / 3;
+grid-row:  3/4}
+
+.intro a {
+grid-column: 2 / 3;
+grid-row: 4/-1; 
+text-decoration: underline;}
+
+
+
+/***** Brionvega *********************************************************************************/
+.BRIONVEGA section:nth-of-type(2) {
+	display: flex;
+	flex-flow: row nowrap ;
+	padding: 0;
+	align-items: center;
+	width: 100%;
+	max-width: 100%;	
+}
+
+.BRIONVEGA section:nth-of-type(2) div {
+	display: flex;
+	flex-flow: column nowrap;
+	padding: 0 6em 4em 1em  ;
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+.BRIONVEGA .sn {
+	background-color: var(--Cream-themecolor) ;
+	padding: .5em 0 .5em 1em ;
+	border-radius: 1.5em;
+	margin: 1em 0;
+}
+
+.BRIONVEGA ul {
+	display: flex;
+	flex-flow: row nowrap ;
+	justify-content: space-between;
+	flex-grow: 1;
+	border: 3px solid hotpink;
+	flex-grow: 3;
+	flex-shrink: 3;
+	padding: 0  1em 4.5em 1em;
+
+
+}
+.BRIONVEGA ul li a img{
+	width: 100%;
+	max-width: 100%;	
+}
+	
+.BRIONVEGA ul li a {
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	text-align: center ;
+	color: var(--Cream-themecolor);
+	
+}
+
+.BRIONVEGA ul li a img	{	order: 1;}
+.BRIONVEGA ul li a h4 	{	order: 2;}
+.BRIONVEGA ul li a p 	{	order: 3;}
+
+
+
+
+
+/****** SHOP COLLECTIONS************/
+
+.collections {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: max-content 1fr;
+	gap: 2em;
+}
+.collections h2 {
+  grid-column: 6/ span 3;
+  grid-row: 1/2;
+}
+.collections ul {
+	grid-column: 1/-1;
+	grid-row: 2/3;
+
+	display: grid;
+	grid-template-columns: repeat(11, 1fr);
+	grid-auto-rows: auto 1fr 1fr 1fr;
+	gap: 2em;
+}
+
+.collections ul li a {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: max-content 1fr;
+	padding: 20px 0;
+}
+
+.collections ul li  a img {
+	grid-row: 1/2;
+	grid-column: 1/-1;
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.collections ul li a h3 {
+	grid-row: 2/3;
+	grid-column: 1/-1;
+
+}
+.collections ul li a p {
+	grid-row: 2/3;
+	grid-column: 2/-1;
+}
+
+
+/******* Shop By Line ********************************************************************/
+
+/********* Shop by Collections **********************************************************/
+
+.sblines{
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: max-content max-content max-content 1fr max-content;
+	gap: 2em;
+}
+
+
+.sblines h2 {
+grid-column: 1/3;
+grid-row: 1/2;}
+
+.sblines button:first-of-type{
+	grid-column: 1/2;
+	grid-row: 2/3;
+}
+.sblines button:nth-of-type(2){
+	grid-column: 2/3;
+	grid-row: 2/3;
+}
+
+.sblines ol:first-of-type {
+	grid-area: 3/1/4/8;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+
+.sblines ol:nth-of-type(2) {
+	grid-area: 1/8/-1/-1;
+}
+
+.sblines p {
+	grid-column: 2/5;
+	grid-row: 4/-1;
+}
+
+.sblines a {
+	grid-column: 2/5;
+	grid-row: 5/-1;
+}
+
+
+/********* Shop by Collections: LAY OUT
+  1st 2 ********************************************************************************/
+.collections ul li:nth-of-type(1) ,
+.collections ul li:nth-of-type(2) {
+	grid-row: 2/3;
+}
+
+.collections ul li:nth-of-type(1) {
+	grid-column: 4/8;
+	
+}
+.collections ul li:nth-of-type(2) {
+	grid-column: 8/12;
+	
+}
+
+/*********	LAY 2nd 2*******/
+
+.collections ul li:nth-of-type(3),
+.collections ul li:nth-of-type(4) {
+  grid-row: 3/4;
+}
+.collections ul li:nth-of-type(3){
+	grid-column: 1/5;
+}
+.collections ul li:nth-of-type(4) {
+	grid-column: 5/9;
+  }
+
+/********* LAY Last 2*******/
+.collections ul li:nth-of-type(5),
+.collections ul li:nth-of-type(6) {
+  grid-row: 4/5;
+}
+
+
+.collections ul li:nth-of-type(5) {
+
+grid-column: 8/12;}
+
+.collections ul li:nth-of-type(6) {
+	grid-column: 4/8;
+padding: 3em 0 2em 0 ;
+font-size: 80px;}
+
+/*********	BESTSELLERS *****************************************/
+
+.bestsellers {
+	display: flex;
+	flex-flow: row wrap ;
+
+	align-items: center;
+	
+		
+}
+.bestsellers article {
+	flex-basis: 25%;
+	padding-bottom: 20px;
+}
+
+.bestsellers  div {
+	display: flex;
+	flex-flow: column nowrap;
+	padding: 0 0 4em 1em  ;
+	flex-basis: 25%;
+	
+}
+.bestsellers div a:first-of-type:nth-child(2) {
+	background-color: var(--Blue-themecolor);
+	padding: .5em 0 .5em 1em ;
+	border-radius: 1.5em;
+	margin: 1em 0;
+}
+.bestsellers article a {
+	display: flex;
+	flex-flow: column wrap;
+	color: var(--Blue-themecolor);
+	flex-grow: 1;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+
+.bestsellers article  a img{
+	width: 100%;
+	max-width: 100%;	
+	height: auto;
+}
+	
+
+
+.bestsellers article a img	{	order: 1;}
+.bestsellers article a h3 	{	order: 2;}
+.bestsellers article a p 	{	order: 3;}
+
+
+/*********** MAX ****************/
+
+.max {
+	height: 40vh;
+	position: relative;
+}
+
+/************* Press ******************/
+.press {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: max-content 1fr 1fr;
+}
+.press h2 {
+	grid-column: 1/2;
+	grid-row: 1/2;
+	font-size: 2.5em;
+	letter-spacing: .05em;
+	font-weight: 480;
+
+}
+
+.press ul:first-of-type {
+	grid-column: 2/3;
+	grid-row: 1/2;
+	display: flex;
+	flex-flow: column nowrap;
+
+	
+}
+.press ul li button h3 {
+	font-size: 2em;
+}
+.press ul:nth-of-type(2) {
+	grid-column: 1/-1;
+	grid-row: 3/4;
+}
+.press ul li p {
+	font-size: 4em;
+	font-weight: 850;
+	font-family: "Chalet-LondonNineteenSixty";
+}
+.press ul li button::before {
+	width: 3em;
+	border: solid var(--Cream-themecolor) .2em;
+}
+/************ Sustainable furniture****/
+.susfurniture {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: max-content 2fr 2fr 2fr 1fr;
+	
+}
+
+.susfurniture h3:first-of-type {
+	grid-column: 1/2;
+	grid-row: 1/2;
+	z-index: 2;
+	
+}
+
+.susfurniture img {
+	grid-column: 1/2;
+	grid-row: 1/-1;
+	width: 100%;
+padding: 0;
+margin: -20px 0 -20px -20px;
+	
+	
+}
+.susfurniture  {
+	
+grid-column: 2/-1;
+grid-row: 1/-1;
+
+}
+.susfurniture section h3 {
+	grid-column: 2/3;
+	grid-row: 1/2;
+;
+}
+.susfurniture section p {
+	grid-column: 2/3 ;
+	grid-row:3/4;
+}
+
+.susfurniture  a {
+	grid-column: 2/3;
+	grid-row: 5/6;
+color: var(--Cream-themecolor);}
+
+
+
+/************* Footer**/
+footer {
+	padding: 1em	;
+	width: 99vw;
+	display: flex;
+	flex-flow: column nowrap;
+
+}
+	
+
+footer section			{	order: 1;}
+footer section ul:first-of-type 		{	order: 1;}
+footer section h3						{	order: 2;}
+footer section a						{	order: 3;}
+
+form					{	order: 2;}
+footer nav				{	order: 3;}
+footer ul:nth-child(3) 	{	order: 4;}
+footer p 				{	order: 5;}
+
+
+footer section {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	padding: 0;
+}
+
+footer section ul  {
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row nowrap;
+	
+	gap: 1em;
+}
+footer ul li img{
+width: 100%;
+	max-width: 100%;	
+}
+
+
+form {
+	display: flex;
+	flex-flow: row nowrap;
+	width: 100%;
+	padding: .5rem;
+}
+
+
+
+
+
+footer:hover,
+footer:hover p,
+footer:hover ul li a,
+footer:hover form >*
+
+
+ {
+	background-color: var(--Cream-themecolor);
+color: var(--Red-themecolor);
+
+}
+footer:hover input[type="text"] {
+border-bottom: solid var(--Red-themecolor) .035em;
+}
+
+input[type="submit"]{
+border: none;
+	border-bottom: solid var(--Blue-themecolor) .035em;
+background-color: var(--Gray-themecolor);	
+font-size: 3em;
+color: var(--Blue-themecolor);}
+input[type="text"],
+select,
+textarea {
+	border: none;
+	border-bottom: solid var(--Blue-themecolor) .035em;
+background-color: var(--Gray-themecolor);
+width: 100%;
+font-size: 3em;
+color: var(--Blue-themecolor);
+}
