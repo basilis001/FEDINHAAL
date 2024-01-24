@@ -66,7 +66,3 @@ rButtonlines.addEventListener("click" , slidelineL);
 
 console.log(slidelineL);
 
-function shopbyline (){
-
-    if { document.querySelector()}
-}
