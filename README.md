@@ -224,7 +224,7 @@ Zo had ik hier eerst een lijst. Maar lijkt het erop dat ik hier meerdere lijsten
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  link naar test document;
 
 </details>
 
