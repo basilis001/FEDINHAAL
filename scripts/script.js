@@ -68,5 +68,5 @@ console.log(slidelineL);
 
 function shopbyline (){
 
-    if aero
+    if { document.querySelector()}
 }

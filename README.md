@@ -55,13 +55,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
 
-  De HTML van de website is allereerst niet goed semantisch gecodeerd. Dit zorgt voor een aantal problemen toegankelijkheidsproblemen. De website is niet bruikbaar met een toetsenbord noch een screenreader. Dit komt vooral doordat de elementen op de website niet het juist label hebben gekregen in de html structuur. Buttons zijn geen buttons, linkjes zijn buttons. Dit maakt de website niet volledig bedienbaar met een toetsenbord, verspringen kloppen niet en blijven vastzitten op element. 
+  De HTML van de website is allereerst niet goed semantisch gecodeerd. Dit zorgt voor een aantal problemen toegankelijkheidsproblemen. De website is niet bruikbaar met een toetsenbord noch een screenreader. Dit komt vooral doordat de elementen op de website niet het juist label hebben gekregen in de html structuur. Buttons zijn geen buttons, linkjes zijn buttons. Dit maakt de website niet volledig bedienbaar met een toetsenbord, verspringen kloppen niet en blijven vastzitten op element. De hele website is geboudwd op div elementen.
 
   Ik wil dus vooral de html goed semantisch en toegankelijk maken want dit is nu totaal niet het geval.
+  
+  
  
 </details>
 
-in een span go to for sr only bij producten
 
 ## Breakdownschets (week 1)
 
@@ -93,7 +94,7 @@ bovenste lastig te bedenken hoe ik deze wilde coderen en hoe ik de html hier dan
 
 ik heb voor veel lijsten gekozen. Ik twijfel nu ivm de toegankelijkheid van de website of dit de juiste keuze was. Er kwam tijdens de les naar voren dat wanneer je een bepaalde toegakelijkheid kiest die alleen de tekst voor de website weergeeft dit ervoor zorgt dat ul en subsequente il's niet worden weergeven.
 
-
+feedback: headers iets aanpassen, en  img altijd als laatst. Order is aan te passen met css
 
 </details>
 
@@ -107,53 +108,7 @@ ik heb voor veel lijsten gekozen. Ik twijfel nu ivm de toegankelijkheid van de w
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
-
-  ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
-
-</details>
-
-
-
-
-
-## Toegankelijkheidstest 2/2 (week 4)
-
-<details>
-  <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
-
-  ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
-
-</details>
-
-
-
-
-
-## Voortgang 3 (week 4)
-
-<details>
-  <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
-
-  ### Stand van zaken
+Ik ben begonnen aan mijn css en wilde en heb toen voornamelijk de bedoeling gehad om flexbox te gebruiken. Dit leek ik wat meer te begrijpen en veel stijling is hiermee al responsive. Ik kwam er alleen al snel achter dat de website niet helemaal consistent loopt qua stijling. Zo kwam ik er tijdens de les achter dat het waarschijnlijk toch verstandiger is om met grid te werken. Ik merk wel dat ik toch best vaak aanpassingen moet maken in mijn code ivm de stijling en hierbij de dom en html ook nog sematisch te houden. Maar ook wil ik qua stijling alles vaak zo effecient mogelijk te bedenken waardoor vaak genoeg ook vastloop. Ik dacht eerder dat we geen classes mochten gebruiken dit bleek alleen voor id te gelden. Mijn sections indelen ging hierdoor nog al moeizaam.
 
 oude code 
   header {
@@ -200,23 +155,93 @@ main section:nth-of-type(6) {
 
 
 
-  ### Agenda voor meeting
-  samen met je groepje opstellen
+Vooral de vele lijsten die ik gebruik ben ik vaak aan het aanpassen en ze ook vaak weer terug aanpas.
+Zo had ik hier eerst een lijst. Maar lijkt het erop dat ik hier meerdere lijsten van moet maken gaan maken die samenwerken.
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  <ol>
+				<li>
+					<h3>Aero></h3>
+					<p>Our handcrafted AERO cabinets offer a unique alternative to the mass produced entertainment
+						cabinets and audio racks currently available. Our modular approach makes it easy for you to
+						configure a custom cabinet that satisfies your specific storage and component requirements.
+						Choose from a range of woods and finishes to further personalize your one-of-a-kind
+						turntable furniture.</p>
+					<a class="sn" href="#"> Shop all aero &#8594</a>
+					<img src="/images/aero.webp" alt="">
+				</li>
+
+				<li>
+					<h3>Unison</h3>
+					<p>An all-in-one solution, Unison combines both audio gear and record storage into a beautifully
+						designed single piece of solid wood furniture. Choose from a range of woods and finishes to
+						further personalize your cabinet.</p>
+					<a class="sn" href="#"> Shop all unique &#8594 </a>
+					<img src="/images/unison.webp" alt="">
+				</li>
+
+				<li>
+					<h3>Luxe</h3>
+					<p>Luxe Record Stands elegantly display cover art while providing easy access to as many as 520
+						records. All of our cabinets are hand-built in the United States from sustainably harvested
+						solid Ash and Walnut, available in a range of finishes.</p>
+					<a class="sn" href="#"> Shop all Luxe &#8594 </a>
+					<img src="/images/luxe.webp" alt="">
+				</li>
+
+				<li>
+					<h3>Dovetail</h3>
+					<p>Luxe Record Stands elegantly display cover art while providing easy access to as many as 520
+						records. All of our cabinets are hand-built in the United States from sustainably harvested
+						solid Ash and Walnut, available in a range of finishes.</p>
+					<a class="sn" href="#"> Shop all Luxe &#8594</a>
+					<img src="/images/dovetail.webp" alt="">
+				</li>
+
+				<li>
+					<h3>max</h3>
+					<p>We developed MAX to offer the same quality and function of our solid-wood record cabinets in
+						a
+						small, and efficient footprint. Flat-packed, easy to assemble and disassemble, and as
+						always,
+						built in the U.S. from sustainably-harvested materials.</p>
+					<a class="sn" href="#"> Shop all max &#8594</a>
+					<img src="/images/max.webp" alt="">
+				</li>
+				</ol>
 
 
-  ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+ feedback: html goed, beter met grid werken, wat meer stijling in de root zetten voor effecentie 
+</details>
+
+
+
+
+
+## Toegankelijkheidstest 2/2 (week 4)
+
+<details>
+  <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
+
+  ### Bevindingen
+  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+
+</details>
+
+
+
+
+
+## Voortgang 3 (week 4)
+
+<details>
+  <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
+
+  ### Stand van zaken
+
+
+
+
 
 </details>
 
@@ -283,58 +308,6 @@ main section:nth-of-type(6) {
 
 
 
-
-  <ol>
-				<li>
-					<h3>Aero></h3>
-					<p>Our handcrafted AERO cabinets offer a unique alternative to the mass produced entertainment
-						cabinets and audio racks currently available. Our modular approach makes it easy for you to
-						configure a custom cabinet that satisfies your specific storage and component requirements.
-						Choose from a range of woods and finishes to further personalize your one-of-a-kind
-						turntable furniture.</p>
-					<a class="sn" href="#"> Shop all aero &#8594</a>
-					<img src="/images/aero.webp" alt="">
-				</li>
-
-
-				<li>
-					<h3>Unison</h3>
-					<p>An all-in-one solution, Unison combines both audio gear and record storage into a beautifully
-						designed single piece of solid wood furniture. Choose from a range of woods and finishes to
-						further personalize your cabinet.</p>
-					<a class="sn" href="#"> Shop all unique &#8594 </a>
-					<img src="/images/unison.webp" alt="">
-				</li>
-
-				<li>
-					<h3>Luxe</h3>
-					<p>Luxe Record Stands elegantly display cover art while providing easy access to as many as 520
-						records. All of our cabinets are hand-built in the United States from sustainably harvested
-						solid Ash and Walnut, available in a range of finishes.</p>
-					<a class="sn" href="#"> Shop all Luxe &#8594 </a>
-					<img src="/images/luxe.webp" alt="">
-				</li>
-
-				<li>
-					<h3>Dovetail</h3>
-					<p>Luxe Record Stands elegantly display cover art while providing easy access to as many as 520
-						records. All of our cabinets are hand-built in the United States from sustainably harvested
-						solid Ash and Walnut, available in a range of finishes.</p>
-					<a class="sn" href="#"> Shop all Luxe &#8594</a>
-					<img src="/images/dovetail.webp" alt="">
-				</li>
-
-				<li>
-					<h3>max</h3>
-					<p>We developed MAX to offer the same quality and function of our solid-wood record cabinets in
-						a
-						small, and efficient footprint. Flat-packed, easy to assemble and disassemble, and as
-						always,
-						built in the U.S. from sustainably-harvested materials.</p>
-					<a class="sn" href="#"> Shop all max &#8594</a>
-					<img src="/images/max.webp" alt="">
-				</li>
-				</ol>
 
 
 
