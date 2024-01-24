@@ -61,7 +61,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
  
 </details>
 
-
+in een span go to for sr only bij producten
 
 ## Breakdownschets (week 1)
 
@@ -93,23 +93,7 @@ bovenste lastig te bedenken hoe ik deze wilde coderen en hoe ik de html hier dan
 
 ik heb voor veel lijsten gekozen. Ik twijfel nu ivm de toegankelijkheid van de website of dit de juiste keuze was. Er kwam tijdens de les naar voren dat wanneer je een bepaalde toegakelijkheid kiest die alleen de tekst voor de website weergeeft dit ervoor zorgt dat ul en subsequente il's niet worden weergeven.
 
-  ### Agenda voor meeting
-  samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
-
-  ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
 
 </details>
 
@@ -170,7 +154,6 @@ ik heb voor veel lijsten gekozen. Ik twijfel nu ivm de toegankelijkheid van de w
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
 oude code 
   header {
@@ -291,9 +274,11 @@ main section:nth-of-type(6) {
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/tab_role
+  2. https://www.w3schools.com/cssref/pr_scroll-behavior.php
+  3. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+  4. https://css-tricks.com/snippets/css/complete-guide-grid/
+
 
 
 
@@ -351,4 +336,81 @@ main section:nth-of-type(6) {
 				</li>
 				</ol>
 
+
+
+
+
+        ---------
+        week eind update 
+        <ul>
+				<li>
+
+					<button aria-label="Show Press Quote Architectural Digest" aria-owns="" id="Architectural">
+						<h3>Architectural Digest</h3>
+					</button>
+
+				</li>
+
+				<li>
+					<button aria-label="Show Press Quote Gizmodo" id="Gizmodo">
+						<h3>Gizmodo</h3>
+					</button>
+
+				</li>
+
+				<li><button aria-label="Show Press Quote Interior Design" id="Interior">
+						<h3>Interior Design</h3>
+					</button>
+
+				</li>
+			</ul>
+
+			<ul>
+
 </details>
+
+header {
+	background-color: transparent;
+  position: fixed;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  gap: 6rem;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+  padding: 0 .875rem ;
+  align-items: center;
+}
+
+.achter{
+	background-color: var(--Cream-themecolor);
+	transition: ease 1s background-color 1s;
+	align-content: center;
+}
+/*
+.transition-header {
+    transition-duration: .15s;
+    transition-property: color,background-color,border-color,text-decoration-color,fill,stroke;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+}
+*/
+
+header hgroup div {
+	width: 5em;
+	padding-right: 1rem;
+	margin-right: 1rem;
+}
+
+header .mobile {
+	display: none;
+}
+
+header nav {}
+header nav,
+header ul {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+
+}
