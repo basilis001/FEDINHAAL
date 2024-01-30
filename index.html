@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="nl">
+<html lang="en">
 
 <head>
 	<meta charset="UTF-8">
@@ -13,13 +13,15 @@
 
 <body>
 
-
-
-	<header>
+	<a href="#main" class="skip-to">Skip to main content</a>
+	<a href="#pagenav" class="skip-to">Skip to page navigation </a>
+<!-- pagina nav maken -->
+	
+	<header class="cream">
 		<hgroup>
-			<a href="">
+			
 				<h1 class="sr-only">Symbol</h1>
-				<div> 
+				<a href=""><div> 
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 400" 
 						aria-label="logo-header"
 						class="icon">
@@ -44,69 +46,11 @@
 			</a>
 		</hgroup>
 
-<!-- pagina nav maken -->
-		<nav class="sr-only" class="Skip to">
-			<H2>Table Of Contents</H2>
-			<ul>
-				<li>
-					<a href="">
-						Website navigation
-					</a>
-				</li>
 
-				<li>
-					<a href="">
-						Start: Introduction Symbol Website
-					</a>
-				</li>
-
-				<li><a href="">
-						New Arrival: Brionvega
-				</a></li>
-
-				<li>
-<a href="">
-						Shop collections
-					</a>
-				</li>
-
-				<li>
-					<a href="">
-						Shop By Line
-					</a>
-
-				</li>
-				<li>
-					<a href="">
-						Bestsellers
-					</a>
-				</li>
-				<li>
-						<a href="">
-						The Max Collection
-					</a>
-				</li>
-				<li>
-					<a href="">
-						Press
-					</a>
-				</li>
-				<li>
-					<a href="">
-						Sustainability
-					</a>
-				</li>
-				<li>
-					<a href="">
-						Footer
-					</a>
-				</li>
-			</ul>
-		</nav>
 
 <!-- website  nav maken -->
 		<button class="mobile">menu</button>
-		<nav aria-label="Main website Navigation">
+		<nav aria-label="Main Website">
 			<button aria-label="Open Shop categories" id="shop">
 				Shop+
 			</button>
@@ -127,7 +71,7 @@
 
 			</nav>-->
 
-			<button aria-label="Open for learning categories" aria-label="Go to shop page" href="">
+			<button aria-label="Open for learning categories" value="">
 				Learn+
 			</button>
 			<ul>
@@ -154,7 +98,61 @@
 
 
 
-	<main>
+	<main id="main">
+			<nav id="pagenav" class=" skip-to">
+			<H2>Table Of Contents</H2>
+			<ul>
+				
+				<li>
+					<a href="">
+						Start: Introduction Symbol Website
+					</a>
+				</li>
+
+				<li><a href="#Brionvega">
+						New Arrival: Brionvega
+				</a></li>
+
+				<li>
+<a href="#collections">
+						Shop collections
+					</a>
+				</li>
+
+				<li>
+					<a href="#sblines">
+						Shop By Line
+					</a>
+
+				</li>
+				<li>
+					<a href="#bestsellers">
+						Bestsellers
+					</a>
+				</li>
+				<li>
+						<a href="#max">
+						The Max Collection
+					</a>
+				</li>
+				<li>
+					<a href="press">
+						Press
+					</a>
+				</li>
+				<li>
+					<a href="">
+						Sustainability
+					</a>
+				</li>
+				<li>
+					<a href="">
+						Footer
+					</a>
+				</li>
+			</ul>
+		</nav>
+		
 		<section class="intro cream">
 			<hgroup>
 				<h2 class="sr-only">Symbol</h2>
@@ -194,16 +192,16 @@
 				Our vinyl storage & audio collections are designed to fit comfortably in your home like real
 				furniture. Built by hand with sustainable materials; wearing in, never wearing out.
 			</p>
-			<a aria-labelledby="" class="sn" href="">Shop Now <span>&#8594</span></a>
+			<a aria-labelledby="" class="sn" href="">Shop Now <span>&#8594;</span></a>
 			<div>
-				<img src="images/c2bc10754192fa9ac2a4ef59f2f52bbd86b6e974-2500x3750.jpg" alt="">
+				<img src="images/c2bc10754192fa9ac2a4ef59f2f52bbd86b6e974-2500x3750.jpg" alt="atmosphere picture brionvega soundsystem">
 			</div>
 		</section>
 
 
 
 
-		<article class="BRIONVEGA">
+		<article id="Brionvega" class="BRIONVEGA">
 			<section class="cream">
 				<h3 class="sr-only">The New incredible Brionvega Collection</h3>
 				<p>We are incredibly honored to offer Brionvega’s collection of iconic, Italian-made hi-fi and radio
@@ -219,7 +217,7 @@
 			<section class="red">
 				<div>
 					<h3>New arrival: Brionvega Collection</h3>
-					<a class="sn" href="">Shop Now <span>&#8594</span></a>
+					<a class="sn" href="">Shop Now <span>&#8594;</span></a>
 				</div>
 
 				<ul>
@@ -228,7 +226,7 @@
 
 							<h3>Totem</h3>
 							<p>from $20,000</p>
-							<img src="images/e924d76263e6e6726c24a70fc954f1b4a9957761-2500x2500.png" alt="">
+							<img src="images/e924d76263e6e6726c24a70fc954f1b4a9957761-2500x2500.png" alt="Product Photo  Productname: Totem Productline: Brionvega">
 						</a>
 					</li>
 
@@ -237,7 +235,7 @@
 
 							<h3>Radiofonografa</h3>
 							<p>from $15,000</p>
-							<img src="images/03cc1bd017303941f943f52050ec5c86146477c2-2500x2500.png" alt="">
+							<img src="images/03cc1bd017303941f943f52050ec5c86146477c2-2500x2500.png" alt="Product Photo  Productname: Radiofonografa Productline: Brionvega">
 						</a>
 					</li>
 
@@ -246,7 +244,7 @@
 
 							<h3>radio.cuba</h3>
 							<p>from $600</p>
-							<img src="images/c085536123c6c1184a9d3be6e9186a3802085b1a-2500x2500.png" alt="">
+							<img src="images/c085536123c6c1184a9d3be6e9186a3802085b1a-2500x2500.png" alt="Product Photo  Productname:Radio Cuba Productline: Brionvega">
 						</a>
 					</li>
 				</ul>
@@ -257,7 +255,7 @@
 
 
 
-		<section class="collections cream">
+		<section id="collections" class="collections cream">
 			<h2>shop collections </h2>
 
 			<ul>
@@ -267,7 +265,7 @@
 						<p> Our vinyl storage collections are designed to fit comfortably in your home like real
 							furniture, not commercial fixturesVinyl Storage
 						</p>
-						<img src="./images/ab8111c9a94a71a39633543b8bcf5533d30e5441-2416x3383.jpg" alt="">
+						<img src="./images/ab8111c9a94a71a39633543b8bcf5533d30e5441-2416x3383.jpg" alt="Vinyl Storage Product">
 					</a>
 				</li>
 
@@ -278,7 +276,7 @@
 						<p> Expanding an existing Sonos system or starting fresh, Symbol made for Sonos audio
 							cabinets and vinyl storage help you take the next step in enjoying vinyl with Sonos.
 						</p>
-						<img src="./images/4fc3c09943c76139d7a532f347cb3c593ba17321-3072x2030.jpg" alt="">
+						<img src="./images/4fc3c09943c76139d7a532f347cb3c593ba17321-3072x2030.jpg" alt="Made for Sonos Product">
 					</a>
 				</li>
 
@@ -288,7 +286,7 @@
 						<h3>Modern Record Console</h3>
 						<p> The flagship of the Symbol line, the Modern Record Console pays homage to “all-in-one”
 							console hifi’s of the 1950’s, an idea whose time, we believe, has come around again.</p>
-						<img src="./images/modernconsole.png" alt="">
+						<img src="./images/modernconsole.png" alt="Modern Record Console Product">
 					</a>
 				</li>
 
@@ -298,7 +296,7 @@
 						<p> We've partnered with McIntosh to offer our acbinets specifically configured to
 							accomodate their legendary product line and include the iconic illuminated McIntosh
 							logo. </p>
-						<img src="./images/mcintosh.png" alt="">
+						<img src="./images/mcintosh.png" alt="McIntosh x Symbol Product">
 					</a>
 				</li>
 
@@ -308,20 +306,20 @@
 						<p> Expertly curated audio packages take the guess work out of the building your system.
 							Weve paired speakers, amps and turntables so that you donte have to, and include
 							everything you, down tot the cables.</p>
-						<img src="./images/audiopackages.png" alt="">
+						<img src="./images/audiopackages.png" alt="Audio Package Product">
 					</a>
 				</li>
-				<li><a class="sn" href="">shop all  <span>&#8594</span></a></li>
+				<li><a class="sn" href="">shop all  <span>&#8594;</span></a></li>
 			</ul>
 		</section>
 
 
 
-		<section class="sblines blue">
+		<section id="sblines" class="sblines blue">
 			<h2>Shop by line </h2>
 
 			<div><!--Onderin section met styling // swipe buttons-->
-			<button aria-label="Previous">&#8592</button> <button aria-label="Next">&#8594</button>
+			<button aria-label="Previous">&#8592;</button> <button aria-label="Next">&#8594;</button>
 
 			<!--carousel swipe styling-->
 			<ol class="headslide" rol="tabpanel" aria-orientation="horizontal">
@@ -375,7 +373,7 @@
 				configure a custom cabinet that satisfies your specific storage and component requirements.
 				Choose from a range of woods and finishes to further personalize your one-of-a-kind
 				turntable furniture.</p>
-			<a class="sn" href="#"> Shop all aero <span>&#8594</span></a>
+			<a class="sn" href="#"> Shop all aero <span>&#8594;</span></a>
 	
 	
 	<!--		<ol>		
@@ -390,7 +388,7 @@
 					<p>An all-in-one solution, Unison combines both audio gear and record storage into a beautifully
 						designed single piece of solid wood furniture. Choose from a range of woods and finishes to
 						further personalize your cabinet.</p>
-					<a class="sn" href="#"> Shop all unique &#8594 </a>
+					<a class="sn" href="#"> Shop all unique &#8594; </a>
 				</li>
 
 				<li
@@ -403,7 +401,7 @@
 					<p>Luxe Record Stands elegantly display cover art while providing easy access to as many as 520
 						records. All of our cabinets are hand-built in the United States from sustainably harvested
 						solid Ash and Walnut, available in a range of finishes.</p>
-					<a class="sn" href="#"> Shop all Luxe &#8594 </a>
+					<a class="sn" href="#"> Shop all Luxe &#8594; </a>
 				</li>
 
 				<li
@@ -416,7 +414,7 @@
 					<p>Luxe Record Stands elegantly display cover art while providing easy access to as many as 520
 						records. All of our cabinets are hand-built in the United States from sustainably harvested
 						solid Ash and Walnut, available in a range of finishes.</p>
-					<a class="sn" href="#"> Shop all Luxe &#8594</a>
+					<a class="sn" href="#"> Shop all Luxe &#8594;</a>
 					
 				</li>
 
@@ -427,7 +425,7 @@
 						small, and efficient footprint. Flat-packed, easy to assemble and disassemble, and as
 						always,
 						built in the U.S. from sustainably-harvested materials.</p>
-					<a class="sn" href="#"> Shop all max &#8594</a>
+					<a class="sn" href="#"> Shop all max &#8594;</a>
 					
 				</li>
 			</ol>
@@ -436,26 +434,26 @@
 </div>
 			<ol>
 				<li>
-					<img src="./images/aero.webp" alt="">
+					<img src="./images/aero.webp" alt="Atmospheric picture Aero Product">
 				</li>
 
 				
 					<li>
-						<img src="./images/unison.webp" alt="">
+						<img src="./images/unison.webp" alt="Atmospheric picture Unison Product">
 					</li>
 	
 					<li>
-						<img src="./images/luxe.webp" alt="">
+						<img src="./images/luxe.webp" alt="Atmospheric picture Luxe Product">
 					</li>
 	
 					<li>
 		
-						<img src="./images/dovetail.webp" alt="">
+						<img src="./images/dovetail.webp" alt="Atmospheric picture Dovetail Product">
 					</li>
 	
 					<li>
 						
-						<img src="./images/max.webp" alt="">
+						<img src="./images/max.webp" alt="Atmospheric picture Max Product">
 					</li>
 			</ol>
 		</section>
@@ -463,18 +461,18 @@
 
 
 		<!--probeer hier een andere methode voor learning purposes -->
-		<section class="bestsellers gray">
+		<section id="Bestsellers" class="bestsellers gray">
 
 			<div>
 				<h2>Bestsellers</h2>
-				<a class="sn" href="https://www.symbolaudio.com/bestsellers">Shop bestsellers <span>&#8594</span></a>
+				<a class="sn" href="https://www.symbolaudio.com/bestsellers">Shop bestsellers <span>&#8594;</span></a>
 			</div>
 
 			<article>
 				<a href="">
 					<h3>Unison 38' Record Stand</h3>
 					<p>from $2,595</p>
-					<img src="./images/unison38.webp" alt="">
+					<img src="./images/unison38.webp" alt="Unison 38' Record Stand">
 				</a>
 			</article>
 
@@ -482,7 +480,7 @@
 				<a href="">
 					<h3>Dovetail 3 × 2.5 Storage Cabinet</h3>
 					<p>from $5,850</p>
-					<img src="./images/dovet3.webp" alt="">
+					<img src="./images/dovet3.webp" alt="Dovetail 3 × 2.5 Storage Cabinet">
 				</a>
 			</article>
 
@@ -490,7 +488,7 @@
 				<a href="">
 					<h3>MAX Turntable Stand</h3>
 					<p>from $795</p>
-					<img src="./images/max3.webp" alt="">
+					<img src="./images/max3.webp" alt="MAX Turntable Stand">
 				</a>
 			</article>
 
@@ -498,7 +496,7 @@
 				<a href="">
 					<h3>Aero 51" LP Console</h3>
 					<p>from $3,190</p>
-					<img src="./images/aero5.webp" alt="">
+					<img src="./images/aero5.webp" alt="Aero 51" LP Console">
 				</a>
 			</article>
 
@@ -506,7 +504,7 @@
 				<a href="">
 					<h3>dovetail record crate</h3>
 					<p>from $199</p>
-					<img src="./images/doverecord.webp" alt="">
+					<img src="./images/doverecord.webp" alt="dovetail record crate">
 				</a>
 			</article>
 
@@ -514,7 +512,7 @@
 				<a href="">
 					<h3>Luxe 2-bay Record Stand</h3>
 					<p>from $2,295</p>
-					<img src="./images/luxe2bay.webp" alt="">
+					<img src="./images/luxe2bay.webp" alt="Luxe 2-bay Record Stand">
 				</a>
 			</article>
 
@@ -522,20 +520,20 @@
 				<a href="">
 					<h3>Unison 24"Sonos Record Stand</h3>
 					<p>from $2,495</p>
-					<img src="./images/uni24.webp" alt="">
+					<img src="./images/uni24.webp" alt="Unison 24"Sonos Record Stand">
 				</a>
 			</article>
 
 
 		</section>
 
-		<section class="max gray">
+		<section id="max" class="max gray">
 			<h2>The max collection</h2>
-			<a class="sn" href="#">Shop Now <span>&#8594</span></a>
+			<a class="sn" href="#">Shop Now <span>&#8594;</span></a>
 				<!-- <img src="./images/maxcollect.webp" alt="">-->
 		</section>
 
-		<section class="press"		class="blue">
+		<section id="press" class="press blue">
 			<h2>Press</h2>
 
 			
@@ -560,7 +558,7 @@
 			<ul>
 				<li>
 
-					<p>"Dynamic in both sound quality and form..."</p>
+					<span id="presstext">"Dynamic in both sound quality and form..."</span>
 
 				</li>
 				<!--
@@ -609,7 +607,7 @@
 			<input type="text" placeholder="Sign up for our newsletter" aria-required="true"
 				aria-label="Your e-mail adress">
 			<!-- met js dynamisch maken zodat tekst verdwijnt on clickidty-->
-			<input type="submit">
+			<input type="submit" text="Submit">
 		</form>
 
 

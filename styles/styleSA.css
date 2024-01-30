@@ -53,7 +53,7 @@
   --gap: 2.2rem;
 
   --pad-s-t: .875rem;
-  --pad-bt: 4rem;
+  --pad-bt: 4.55rem;
   --font-fam-S: "Supreme Bold";
   --font-fam-c:"Chalet-LondonNineteenSixty";
   --fontlink: .865rem var(--font-fam-c), sans-serif   ;
@@ -107,8 +107,9 @@ a.sn{
 	border: solid .15rem var(--Cream-themecolor);
 	background-color: transparent;
   }
+  .cream  a.sn:focus,
 .cream  a.sn:hover {
-	background-color: rgb(199, 42, 0);
+	background-color: rgb(206, 147, 131);
 	color: rgb(255, 252, 218);
 }
 
@@ -117,20 +118,14 @@ a.sn{
 	outline: .1rem solid var(--Cream-themecolor);
 	border: solid .15rem var(--Red-themecolor);
 	background-color: transparent;
-}.red  a.sn:hover {
+}
+.red a.sn:focus,
+.red  a.sn:hover {
 	background-color: rgb(255, 252, 218);
 	color: rgb(199, 42, 0);
 }
 
-.red  a.sn {
-	color: var(--Cream-themecolor);
-	outline: .1rem solid var(--Cream-themecolor);
-	border: solid .15rem var(--Red-themecolor);
-	background-color: transparent;
-}.red  a.sn:hover {
-	background-color: rgb(255, 252, 218);
-	color: rgb(199, 42, 0);
-}
+
 
 .blue  a.sn {
 	color: var(--Gray-themecolor);
@@ -147,16 +142,22 @@ a.sn{
 	outline: .1rem solid var(--Green-themecolor);
 	border: solid .15rem var(--Gray-themecolor);
 	background-color: transparent;
-}.gray  a.sn:hover {
+}
+.gray a.sn:focus,
+.gray  a.sn:hover {
 	background-color:var(--Green-themecolor);
 	color: var(--Gray-themecolor);
 }
 
 
-
+.gray  a:focus{
+	
+	border: solid .5em var(--Green-themecolor);
+	transition: forwards ease 2s, color 2s, border 1s;
+}
 
 .gray  a:hover{
-	color: var(--Gray-themecolor);
+color: var(--Gray-themecolor);
 	background-color: var(--Green-themecolor);
 	transition: forwards ease 2s, color 2s, background-color 1s;
 }
@@ -166,6 +167,12 @@ a.sn{
 	opacity: 70%;
 }
 
+
+.red  a:focus{
+	
+	border: solid .5em var(--Cream-themecolor);
+	transition: forwards ease 2s, color 2s, border 1s;
+}
 .red ul li a:hover {
 	color: var(--Red-themecolor);
 	background-color: var(--Cream-themecolor) ;
@@ -178,6 +185,14 @@ a.sn{
 	opacity: 70%;
 }
 
+button:focus {
+	size: 150%;
+}
+.cream a:focus{
+	
+	border: solid .5em var(--Red-themecolor);
+	transition: forwards ease 2s, color 2s, border 1s;
+}
 .cream ul li a:hover{
 	color: var(--Cream-themecolor);
 	background-color: var(--Red-themecolor);
@@ -188,6 +203,8 @@ a.sn{
 	border: solid .25rem var(--Red-themecolor);
 	opacity: 70%;
 }
+
+
 a:hover {
 	transition: forwards ease 1s, color 1s, background-color 1s;
 	text-decoration: underline;
@@ -231,6 +248,7 @@ a:hover {
 	}
   
   }	*/
+a:focus img,  
 a:hover img {
 	  opacity: 50%;
 }
@@ -248,6 +266,53 @@ p {
   white-space: nowrap;
   width: 1px;
 }
+
+/* https://www.freecodecamp.org/news/how-to-add-skip-to-main-content-links-to-a-website/ */
+
+
+.skip-to {
+	position: absolute;
+	left: -9999px;
+	z-index: 999;
+	padding: 1em;
+	background-color:var(--Red-themecolor);
+	color:var(--Cream-themecolor);
+	opacity: 0;
+  }
+
+ 
+  .skip-to:first-of-type:focus {
+	left: 10%;
+	transform: translateX(-10%);
+	opacity: 1;
+  }
+
+  .skip-to:nth-of-type(2):focus {
+	left: 20%;
+	transform: translateX(-20%);
+	opacity: 1;
+  }
+
+main nav.skip-to {
+	
+	left: -9999px;
+	
+	padding: 1em;
+	background-color:var(--Red-themecolor);
+	color:var(--Cream-themecolor);
+	opacity: 1;
+  }
+  main nav.skip-to:focus 		{
+	left: 80%;
+	transform: translateX(-80%);
+	opacity: 1;
+  }
+
+
+
+
+
+
 button {
 	background-color: transparent;
 	border: 0;
@@ -339,7 +404,7 @@ header ul {
   align-items: center;
 
 }
-nav[aria-label="Main website Navigation"]{
+nav[aria-label="Main Website"]{
 	padding: 0 ;
 	width: 100%;
 	grid-column: 3/12 ;
@@ -721,7 +786,9 @@ flex-flow: column nowrap;}
 	grid-column: 1/-1;
 	padding: .5rem 0 0 .5rem;
 	
+
 }
+.collections ul li a:focus h3 ,
 .collections ul li a:hover h3 {
 	text-decoration: underline;
 }
@@ -1002,7 +1069,7 @@ cursor: pointer;
 	background-color: var(--Cream-themecolor);
 	
   }
-
+  .press div:focus button::after,
   .press div:hover  button::after{
 
   background-color: var(--Gray-themecolor);
@@ -1014,11 +1081,13 @@ cursor: pointer;
   grid-column: 1/-1;
   grid-row: 3/4;
 }
-
-.press ul li p {
-  font-size: 2.5em;
+.press ul li {
+	padding-top: 5em;
+}
+.press ul li span {
+  font-size: 3em;
   font-weight: 550;
-  padding-top: 2em;
+ 
 }
 
 
@@ -1314,7 +1383,7 @@ input::placeholder {
   
 }
 /*footer section ul li:nth-of-type(1) a img:hover {
-
+sr
 }*/
 
 footer:hover input::placeholder,

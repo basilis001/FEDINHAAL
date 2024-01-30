@@ -55,10 +55,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
 
-  De HTML van de website is allereerst niet goed semantisch gecodeerd. Dit zorgt voor een aantal problemen toegankelijkheidsproblemen. De website is niet bruikbaar met een toetsenbord noch een screenreader. Dit komt vooral doordat de elementen op de website niet het juist label hebben gekregen in de html structuur. Buttons zijn geen buttons, linkjes zijn buttons. Dit maakt de website niet volledig bedienbaar met een toetsenbord, verspringen kloppen niet en blijven vastzitten op element. De hele website is geboudwd op div elementen.
+  De HTML van de website is allereerst niet goed semantisch gecodeerd. Dit zorgt voor een aantal problemen toegankelijkheidsproblemen. De website is niet bruikbaar met een toetsenbord noch een screenreader. Het is niet duidelijk waar je je op de pagina bevindt met een toetsenbord. Dit komt vooral doordat de elementen op de website niet het juist label hebben gekregen in de html structuur. Buttons zijn geen buttons, linkjes zijn buttons. Dit maakt de website niet volledig bedienbaar met een toetsenbord, verspringen kloppen niet en blijven vastzitten op element. De hele website is geboudwd op div elementen.
 
   Ik wil dus vooral de html goed semantisch en toegankelijk maken want dit is nu totaal niet het geval.
   
+   <img src="readme-images/checklist SA 1.pdf" width="375px" alt="checklist test 1">
   
  
 </details>
@@ -75,12 +76,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
    ### dynamisch deel (bijv menu): 
    <img src="readme-images/brkddyn.png" width="375px" alt="breakdown van de hele pagina">
 
-  
-
 </details>
-
-
-
 
 
 ## Voortgang 1 (week 2)
@@ -90,15 +86,32 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
 <img src="readme-images/lastig.png" width="375px" alt="">
-bovenste lastig te bedenken hoe ik deze wilde coderen en hoe ik de html hier dan voor moest schrijven. Het is een carousel dus hier heb ik uiteindelijk voorgekozen. Ik wilde het eerst als lijst met steeds een button in de il als titel welke dan zou zorgen voor een nieuwe weergave.
+Het bovenste vond ik lastig te bedenken hoe ik deze wilde coderen en stijlen en hoe ik de html hier dan voor moest schrijven. Het is een carousel. Ik heb toen op advies van Studentass uiteindelijk gekozen voor een lijst met een h3, p img en een a. 
 
-ik heb voor veel lijsten gekozen. Ik twijfel nu ivm de toegankelijkheid van de website of dit de juiste keuze was. Er kwam tijdens de les naar voren dat wanneer je een bepaalde toegakelijkheid kiest die alleen de tekst voor de website weergeeft dit ervoor zorgt dat ul en subsequente il's niet worden weergeven.
+ <ol>
+				<li>
+					<h3>Aero></h3>
+					<p>Our handcrafted AERO cabinets offer a unique alternative to the mass produced entertainment
+						cabinets and audio racks currently available. Our modular approach makes it easy for you to
+						configure a custom cabinet that satisfies your specific storage and component requirements.
+						Choose from a range of woods and finishes to further personalize your one-of-a-kind
+						turntable furniture.</p>
+					<a class="sn" href="#"> Shop all aero &#8594</a>
+					<img src="/images/aero.webp" alt="">
+				</li>
 
-feedback: headers iets aanpassen, en  img altijd als laatst. Order is aan te passen met css
 
+Ik wilde het eerst als een (button)lijst met steeds een button in de il als titel welke dan zou zorgen voor een nieuwe weergave onClick.
+
+
+Ik heb overal voor veel lijsten gekozen. Ik twijfel nu ivm de toegankelijkheid van de website of dit de juiste keuze was. Er kwam tijdens de les naar voren dat wanneer je een bepaalde toegakelijkheid kiest die alleen de tekst voor de website weergeeft dit ervoor zorgt dat ul en subsequente il's niet worden weergeven. 
+
+Ik heb goede feedback ontvangen over mijn code en de lijsten waren goed. Ik heb er wel voor gekozen om een bepaalde sectie niet met lijsten te doen maar articles.
+
+feedback: headers wat aanpassen, nav moet in de header en img altijd als laatst in een sequence. Order is later aan te passen met css. Denk dus aan wat belangrijk is met het opbouwen.
+
+Ook was ik begonen aan mijn css. Ik begon met het toewijzen van de juiste kleuren aan de juiste secties. Ik vond het nogal lastig de juiste secties te targeten met de css, waarbij deze herbruikbaar is. Ook liep ik steeds vast als ik dan toch een aanpassingen maakte in mijn code. 
 </details>
-
-
 
 
 
@@ -108,7 +121,8 @@ feedback: headers iets aanpassen, en  img altijd als laatst. Order is aan te pas
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-Ik ben begonnen aan mijn css en wilde en heb toen voornamelijk de bedoeling gehad om flexbox te gebruiken. Dit leek ik wat meer te begrijpen en veel stijling is hiermee al responsive. Ik kwam er alleen al snel achter dat de website niet helemaal consistent loopt qua stijling. Zo kwam ik er tijdens de les achter dat het waarschijnlijk toch verstandiger is om met grid te werken. Ik merk wel dat ik toch best vaak aanpassingen moet maken in mijn code ivm de stijling en hierbij de dom en html ook nog sematisch te houden. Maar ook wil ik qua stijling alles vaak zo effecient mogelijk te bedenken waardoor vaak genoeg ook vastloop. Ik dacht eerder dat we geen classes mochten gebruiken dit bleek alleen voor id te gelden. Mijn sections indelen ging hierdoor nog al moeizaam.
+Mijn bedoeling was in de eerste instantie om veel gebruik te mken van flexbox. Dit leek ik wat meer te begrijpen en veel stijling is hiermee al responsive. Ik kwam er alleen al snel achter dat de website niet helemaal consistent loopt qua stijling. Zo kwam ik er tijdens de les achter dat het waarschijnlijk toch verstandiger is om met grid te werken. Ik merk wel dat ik toch best vaak aanpassingen moet maken in mijn code ivm de stijling en hierbij de dom en html ook nog sematisch te houden. Maar ook wil ik qua stijling alles vaak zo effecient mogelijk te bedenken waardoor vaak genoeg ook vastloop en heel veel aanpas. Ik dacht eerder dat we geen classes mochten gebruiken dit bleek alleen voor id te gelden. Mijn sections indelen ging hierdoor nog al moeizaam. Ik kwam er toen achter dat ik wel classes mocht gebruiken. Ik dacht namelijk dat dit niet het geval was.
+
 
 oude code 
   header {
@@ -154,11 +168,92 @@ main section:nth-of-type(6) {
 }
 
 
+ feedback: html goed, beter met grid werken, wat meer stijling in de root zetten voor effecentie 
+ 
+ 
+ 
+ Hierna heb elke sectie een naam gegeven een deze de juiste kleuren gegeven. Ik liep ook vaak vast omdat ik nog niet doorhad dat de parent elements grid niet doorlopen in die van de child elements. Dit zorgde vaak voor problemen. Ik moet dus de sectie de ul en de li elk afzonderlijk een grid toewijzen.
 
-Vooral de vele lijsten die ik gebruik ben ik vaak aan het aanpassen en ze ook vaak weer terug aanpas.
-Zo had ik hier eerst een lijst. Maar lijkt het erop dat ik hier meerdere lijsten van moet maken gaan maken die samenwerken.
+</details>
 
-  <ol>
+
+
+
+
+## Toegankelijkheidstest 2/2 (week 4)
+
+<details>
+  <summary>uitwerken na test in 9<sup>e</sup> werkgroep
+  
+  De headings klopte en ook veel buttons en links</summary>
+
+  ### Bevindingen
+  de structuur is logisch en ik kan door het meeste heen tabben
+  buttons en links geven aan waar ze voor dienen
+
+  1. Gebruik de optie om alle headings
+voor te laten lezen.
+Is de structuur logisch?
+Geeft elk kopje goed aan wat er onder
+het kopje valt?
+2. Gebruik de optie om alle linkjes voor
+te laten lezen.
+Geeft elke link goed aan waar naartoe
+gelinkt wordt?
+
+
+  //  Ik heb een duidelijkere hover en focus state toegevoegd. 
+  //  Het tabben door de website laat nu beter zien waar je je bevindt.
+  //  De links geven een duidelijkere functie met de sr
+  //  Betere nesting, vooral van de product links
+  //  img  hebben img tag
+  //  consequentere stijling van links --> call to action (shop buttons) 
+  // kleuren wat dieper gemaakt of andere combo van themakleuren voor ratio 
+ 
+  <a href="./readme-images/check2-mysa.pdf"> link naar test document; </a> 
+
+</details>
+
+
+
+
+
+## Voortgang 3 (week 4)
+
+<details>
+  <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
+
+  ### Stand van zaken
+  Heel mijn HTML stond en css ook. Echter bij het invoegen van mijn JS stuitte ik weer op een aantal "fouten" om de interactieve elementen werkend te maken. Ook mocht de stijling niet aangepast worden dmv js. Dit had ik wel op wat delen. Ook dit bracht dus weer wat problemen met zich mee. Ik heb weer vele delen van mijn html moeten aanpassen ivm de stijling en hierbij de dom en html ook nog semantisch te houden. Zo heb ik de nav lijst in mijn header moeten aanpassen. Er zatten namelijk button elementen in die een tweede niveau van de nav zichtbaar moeten maken. Ik kreeg de header en haar elementen toen niet meer juist gepositioneerd met flexbox. Ik heb toen besloten om ook de header in een grid te stoppen. Dit was over het algehele vaak het probleem; het buttons in lijsten probleem. Ook in het press gedeelte.
+
+  Ook heb hier de hover per kleur aangepast. Omdat ik dit herbruikbaar wilde maken heb ik besloten dit met classes te doen.
+
+oude code:
+    <ul>
+  
+    <li>
+					<h3>Architectural Digest</h3>
+					<p>"Dynamic in both sound quality and form..."</p>
+
+				</li>
+
+				<li>
+					<h3>Gizmodo</h3>
+					<p>"…makes music look as beautiful as it sounds"</p>
+				</li>
+
+				<li>
+					<h3>Interior Design</h3>
+					<p>"Stylish music geeks will covet the Midcentury modern lines and high tech specs…"</p>
+				</li>
+			</ul>
+
+   
+  Zo had ik eerst een lijst voor de sblines sectie. Maar lijkt het erop dat ik hier meerdere lijsten van moet maken maken die samenwerken.
+
+de h3 moet een buttonlijst worden de p een lijst en de img een lijst die ik aanelkaar moet linken met een juiste aria label. Ik liep hier heel lang op vast. En heb het tig keer aangepast. Zo heb ik hierna de lijst toch aangepast naar twee lijsten de h3 wat buttons worden en de rest wel steeds in een lijst. Deze buttons moet doorgeven welke li van de lijst weergegeven moet worden. De h3 zou dan in mijn optiek niet zichtbaar moeten zijn maar wel gelezen kunnen worden met een screenreader. Omdat een button geen heading kan zijn. En toen weer veranderd naar origineel enzovoorts...
+
+
 				<li>
 					<h3>Aero></h3>
 					<p>Our handcrafted AERO cabinets offer a unique alternative to the mass produced entertainment
@@ -211,36 +306,6 @@ Zo had ik hier eerst een lijst. Maar lijkt het erop dat ik hier meerdere lijsten
 
 
 
- feedback: html goed, beter met grid werken, wat meer stijling in de root zetten voor effecentie 
-</details>
-
-
-
-
-
-## Toegankelijkheidstest 2/2 (week 4)
-
-<details>
-  <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
-
-  ### Bevindingen
-  link naar test document;
-
-</details>
-
-
-
-
-
-## Voortgang 3 (week 4)
-
-<details>
-  <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
-
-  ### Stand van zaken
-
-
-
 
 
 </details>
@@ -265,29 +330,70 @@ Zo had ik hier eerst een lijst. Maar lijkt het erop dat ik hier meerdere lijsten
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+ Het scrollen met de button en de juiste item weergeven bij de subsequente button, maar ook er voor zorgen dat de actieve button steeds op de juiste plek staat. 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+ Ook had ik graag meer tab navigatie op de pagina gewild maar liep zo erg vast bij het bovenstaande gedeelt dat ik hier niet helemaal aan toe kwam.
+ <nav id="pagenav" class=" skip-to">
+			<H2>Table Of Contents</H2>
+			<ul>
+				
+				<li>
+					<a href="">
+						Start: Introduction Symbol Website
+					</a>
+				</li>
+
+				<li><a href="">
+						New Arrival: Brionvega
+				</a></li>
+
+				<li>
+<a href="#collections">
+						Shop collections
+					</a>
+				</li>
+
+				<li>
+					<a href="#sblines">
+						Shop By Line
+					</a>
+
+				</li>
+				<li>
+					<a href="#bestsellers">
+						Bestsellers
+					</a>
+				</li>
+				<li>
+						<a href="#max">
+						The Max Collection
+					</a>
+				</li>
+				<li>
+					<a href="press">
+						Press
+					</a>
+				</li>
+				<li>
+					<a href="">
+						Sustainability
+					</a>
+				</li>
+				<li>
+					<a href="">
+						Footer
+					</a>
+				</li>
+			</ul>
+		</nav>
+
+ footer van kleur veranderende per hover over img. deze veranderd nu alleen een keer van kleur bij hover over de img.
+
+  <img src="./readme-images/fout.png" width="375px" alt="bummer">
 </details>
 
 
-<ul>
-				<li>
-					<h3>Architectural Digest</h3>
-					<p>"Dynamic in both sound quality and form..."</p>
 
-				</li>
-
-				<li>
-					<h3>Gizmodo</h3>
-					<p>"…makes music look as beautiful as it sounds"</p>
-				</li>
-
-				<li>
-					<h3>Interior Design</h3>
-					<p>"Stylish music geeks will covet the Midcentury modern lines and high tech specs…"</p>
-				</li>
-			</ul>
 
 
 ## Bronnenlijst
