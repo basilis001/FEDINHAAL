@@ -1,6 +1,6 @@
 
 //console.log("hi");
-var pressbut = document.querySelector('.press button')
+
 var gizmodo = document.querySelector('#Gizmodo');
 console.log(gizmodo);
 var interior = document.querySelector('#Interior');
@@ -17,16 +17,16 @@ console.log(header);
 var main = document.querySelector('main')
 console.log(main);
 var hide = document.querySelector
-var logo = document.querySelector('header > hgroup > a > div');
+var logo = document.querySelector('header >  a > div');
 console.log(logo);
 var colorButton = document.querySelector('header > button:last-child')
 console.log(colorButton);//function
 var lButtonlines = document.querySelector('[aria-label="Previous"]');
-
+var pressText = document.querySelector('#presstext')
 var rButtonlines = document.querySelector('[aria-label="Next"]');
 console.log(rButtonlines);
-var tabslide = document.querySelector('.headslide')
-var pressText = document.querySelector('#presstext');
+var navPage = document.querySelector('aside');
+var elementiess = document.getElementsByClassName('.Skip-to');
 
 
 //<button onclick="previousImage()">Previous</button>
@@ -47,16 +47,28 @@ var prevScrollpos = window.scrollY;
                 logo.className='';
                }  }
 
+               function PressGiz(){
+  
+                pressText.textContent='"…makes music look as beautiful as it sounds"';}
           
-          
+gizmodo.addEventListener('click', PressGiz)
 
+function pressArch(){
+  
+    pressText.textContent='"Dynamic in both sound quality and form..."'}
 
+arch.addEventListener('click', pressArch) 
 
+function pressInt(){
+  
+    pressText.textContent='"Stylish music geeks will covet the Midcentury modern lines and high tech specs…"'}
+
+interior.addEventListener('click', pressInt) 
 
 
 function slidelineL (){
     console.log("hey queen")
-tabslide.scrollRight +=10
+rButtonlines.scrollLeft +=20
 
 
 } 
@@ -64,14 +76,22 @@ tabslide.scrollRight +=10
 window.addEventListener("scroll" , scrolm);
 rButtonlines.addEventListener("click" , slidelineL);
 
-console.log(slidelineL);
+console.log(slidelineL)
 
-function press(){
-    if (gizmodo)
-    {pressText.textContent='"…makes music look as beautiful as it sounds"';}
-    if (interior)
-{pressText.textContent='"Stylish music geeks will covet the Midcentury modern lines and high tech specs…"'}
-if (arch){pressText.textContent='"Dynamic in both sound quality and form..."'}
-}
 
-pressbut.addEventListener('click' , press);
+function skipFocus (){
+
+    if (elementiess.hasFocus())    {
+        navPage.className = 'showSkipNav' ;
+        navPage.classList.remove('skipnav');
+        
+    } 
+    else
+   { navPage.className = '';
+    navPage.classList.add('skipnav');}
+
+    function skipBlur(){
+        
+    }
+} 
+console.log(elementiess);

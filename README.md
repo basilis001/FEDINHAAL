@@ -58,6 +58,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   De HTML van de website is allereerst niet goed semantisch gecodeerd. Dit zorgt voor een aantal problemen toegankelijkheidsproblemen. De website is niet bruikbaar met een toetsenbord noch een screenreader. Het is niet duidelijk waar je je op de pagina bevindt met een toetsenbord. Dit komt vooral doordat de elementen op de website niet het juist label hebben gekregen in de html structuur. Buttons zijn geen buttons, linkjes zijn buttons. Dit maakt de website niet volledig bedienbaar met een toetsenbord, verspringen kloppen niet en blijven vastzitten op element. De hele website is geboudwd op div elementen.
 
   Ik wil dus vooral de html goed semantisch en toegankelijk maken want dit is nu totaal niet het geval.
+
+   <img src="readme-images/verhouding.png" width="375px" alt="top">
   
    <img src="readme-images/checklist SA 1.pdf" width="375px" alt="checklist test 1">
   
@@ -185,13 +187,11 @@ main section:nth-of-type(6) {
 <details>
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep
   
-  De headings klopte en ook veel buttons en links</summary>
+ </summary>
 
   ### Bevindingen
-  de structuur is logisch en ik kan door het meeste heen tabben
-  buttons en links geven aan waar ze voor dienen
 
-  1. Gebruik de optie om alle headings
+    1. Gebruik de optie om alle headings
 voor te laten lezen.
 Is de structuur logisch?
 Geeft elk kopje goed aan wat er onder
@@ -200,6 +200,11 @@ het kopje valt?
 te laten lezen.
 Geeft elke link goed aan waar naartoe
 gelinkt wordt?
+
+ De headings kloppen en tabben door. Ook veel buttons en links
+  de structuur is logisch en ik lijk niet perse ergens vast te lopen. De buttons en links geven aan waar ze voor dienen. Alleen zijn flink wat <a>'s genest met andere elementen erin. zoals text en img. Deze leest de sr volledig voor. Dat kan al snel zorgen voor overload merk ik.
+
+  Ook skipt deze niet goed over mijn paginanav heen als deze niet gekozen is. Ik zou dat met Js kunnen herstellen gok ik. 
 
 
   //  Ik heb een duidelijkere hover en focus state toegevoegd. 
@@ -324,13 +329,18 @@ de h3 moet een buttonlijst worden de p een lijst en de img een lijst die ik aane
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Dat ik dit uberhaupt heb kunnen maken en allemaal heb gepositioneerd. Dit vond ik af en toe lastig. En was een beetje angstig voor grid. Ik had hier een enorme heuvel van gemaakt, maar heb daar eigenlijk bijna de hele website mee gemaakt. Ik heb grid nu aardig onder de knie. Ik ben vooral meer de lol gaan zien in front end. Ik baal nog wel van de sectie die mij niet gelukt is. Vooral doordat ik het zo toegankelijk mogelijk wilden houden.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+ 
 
 
   ### Dit was lastig/Is niet gelukt:
  Het scrollen met de button en de juiste item weergeven bij de subsequente button, maar ook er voor zorgen dat de actieve button steeds op de juiste plek staat. 
+ 
+ 
+ Ik neem of probeer vaak met mijn projecten enigszins iets van een accessibility invalshoek te nemen, omdat dit ook wel echt een belangrijk punt voor mij is als designer van digitale producten. Ik had dus graag stuk meer met accessibility gedaan. Ik liep hier denk ik ook vaak op vast omdat ik steeds meer tegenkwam en zag aan best practices, maar deze vaak ook niet helemaal snapte. Ik heb daardoor wel breed veel geleerd van wat er allemaal mogelijk is maar niet diep genoeg gegaan om het te kunnen toepassen. Dat vind ik wel jammer. Ook heb ik eigenlijk te weinig tijd gehad(genomen) voor mijn js. Wanneer ik vastliep, liep ik dat ook goed en er zoveel informatie te vinden wat aan de ene kant fijn is. Ik leer hier veel van maar ik merk dat dit eerder overloadend is. Dit omdat ik elk nieuwe dingetje achtervolg en dan opeens in het verlengde met heel wat anders bezig kan zijn. Wat veel zorgt voor half afleverbaar werk. En ook rekeninghoudend met het feit dat het internet ook wel vervuild is qua practices. Ik vond het wel echt leuk om te doen en dat is voor het eerst al ben ik er nog geen ster in.
+
+ 
 
  Ook had ik graag meer tab navigatie op de pagina gewild maar liep zo erg vast bij het bovenstaande gedeelt dat ik hier niet helemaal aan toe kwam.
  <nav id="pagenav" class=" skip-to">
@@ -409,6 +419,7 @@ de h3 moet een buttonlijst worden de p een lijst en de img een lijst die ik aane
   2. https://www.w3schools.com/cssref/pr_scroll-behavior.php
   3. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   4. https://css-tricks.com/snippets/css/complete-guide-grid/
+  5. https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-align
 
 
 
