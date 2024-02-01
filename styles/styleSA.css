@@ -200,24 +200,6 @@ p {
   line-height: 1.5;
   font-weight: 400;
 }
-@keyframes example {
-  0% {
-    fill: var(--Red-themecolor);
-    height: 1rem;
-    color: var(--Red-themecolor);
-    background-color: #fffcdad2;
-  }
-
-  50% {
-    background-color: #fffcda73;
-  }
-
-  100% {
-    fill: var(--Red-themecolor);
-    color: var(--Red-themecolor);
-    background-color: #fffcda;
-  }
-}
 
 .sr-only:not(:focus):not(:active) {
   clip: rect(0 0 0 0);
@@ -230,41 +212,19 @@ p {
 }
 
 /* https://www.freecodecamp.org/news/how-to-add-skip-to-main-content-links-to-a-website/ */
-@keyframes skipan {
-  0% {
-    fill: var(--Red-themecolor);
-    top: 0;
-    height: 33, 33%;
-    color: var(--Red-themecolor);
-    background-color: #fffcdad2;
-  }
-
-  50% {
-    height: 66.66%;
-    background-color: #fffcda73;
-  }
-
-  100% {
-    height: 100%;
-    fill: var(--Red-themecolor);
-    color: var(--Red-themecolor);
-    background-color: #fffcda;
-  }
-}
 
 body .skipnav :nth-child(-n + 3 of .skip-to) {
   height: 4rem;
 }
 
 
-/*.skip {
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}*/
+
+body .skipnav ul {
+	left: .1rem;
+	top: 4.5rem;
+	position: absolute;
+	z-index: 5;
+  }
 
 .skipnav {
   position: absolute;
@@ -272,13 +232,6 @@ body .skipnav :nth-child(-n + 3 of .skip-to) {
   top: 0;
   z-index: 5;
   max-width: 50vw;
-  animation-name: skipan;
-  animation: skipan ;
-  animation-duration: 5s;
-  animation-timing-function: ease-in-out;
-  animation-delay:  300ms; 
-  animation-iteration-count: 1;
-  
 }
 
 body .skipnav:first-child:first-of-type ul li a,
@@ -299,21 +252,32 @@ body .skipnav a {
   line-height: 1.5;
   background-color: #c72b00d1;
   font-size: 0.8rem;
+  margin: 0;
 }
-
-body .skipnav ul li:focus,
+.skipnav ul {
+	padding:0;
+	margin: 0;
+}
+body .skipnav ul li a:focus,
 body .skipnav a:focus {
   border: solid 0.15rem var(--Red-themecolor);
-  padding: 1rem 0.5rem;
   color: var(--Red-themecolor);
   background-color: #fffcdada;
-  line-height: 1.5;
+  line-height: 1;
   font-weight: 900;
-  min-height: 230%;
+  height: 100%;
+  
   opacity: 1;
   
+} 
+.skipnav {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
-
 /*
  
 .skipnav.skipnav {
