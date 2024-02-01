@@ -211,12 +211,34 @@ p {
   width: 1px;
 }
 
-/* https://www.freecodecamp.org/news/how-to-add-skip-to-main-content-links-to-a-website/ */
 
-body .skipnav :nth-child(-n + 3 of .skip-to) {
-  height: 4rem;
+
+
+
+body .skipnav:first-child:first-of-type ul li,
+body .skipnav:first-child:first-of-type {
+  display: flex;
+  flex-flow: row nowrap;
 }
 
+
+
+
+/* https://www.freecodecamp.org/news/how-to-add-skip-to-main-content-links-to-a-website/ */
+/*
+body .skipnav :nth-child(-n + 3 of .skip-to) {
+  height: 4rem;
+
+}
+
+
+.skipnav {
+	position: fixed;
+	left: 1rem;
+	top: 1rem;
+	z-index: 5;
+	width: 20%;
+}
 
 
 body .skipnav ul {
@@ -278,7 +300,7 @@ body .skipnav a:focus {
   height: 1px;
   overflow: hidden;
 }
-/*
+
  
 .skipnav.skipnav {
 	position: absolute;

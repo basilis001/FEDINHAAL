@@ -78,7 +78,7 @@ rButtonlines.addEventListener("click" , slidelineL);
 
 console.log(slidelineL)
 
-
+aria-label="Open Shop categories"
 function skipFocus (){
 
     if (elementiess.hasFocus())    {

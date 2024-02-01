@@ -1,0 +1,416 @@
+
+if ( get)
+{pressText.textContent=
+
+
+if (arch){pressText.textContent=
+get textcontent button
+
+function PressGiz(){
+  
+    pressText.textContent='"…makes music look as beautiful as it sounds"';
+
+
+    function PressGiz
+
+{pressText.textContent='"Stylish music geeks will covet the Midcentury modern lines and high tech specs…"'}
+if (arch){pressText.textContent='"Dynamic in both sound quality and form..."'}
+}
+
+
+pressbut.addEventListener('click' , changePress);
+
+console.log(press);
+
+
+
+
+
+/*
+@keyframes butfillred {
+	0% {
+	  background-color: rgba(199, 42, 0, 0.101);
+	  color: rgb(255, 252, 218);
+	  
+	}
+
+	10% {
+		background-color:rgba(199, 43, 0, 0.251);
+	    color: rgb(255, 252, 218);
+	}
+	  
+	100% {
+		background-color:rgb(199, 42, 0);
+	    color: rgb(255, 252, 218);
+	}
+  
+  }
+
+  @keyframes butfillblue {
+	0% {
+	  background-color: rgba(199, 42, 0, 0.101);
+	  color: rgb(223, 226, 229);
+	  
+	}
+
+	10% {
+		background-color:rgba(199, 43, 0, 0.251);
+	    color: rgb(255, 252, 218);
+	}
+	  
+	100% {
+		background-color:rgb(199, 42, 0);
+	    color: rgb(255, 252, 218);
+	}
+  
+  }	*/
+
+
+@keyframes example {
+	0% {fill: var(--Red-themecolor); height: 1rem; color: var(--Red-themecolor);	background-color: #fffcdad2;}
+
+	50% {
+	background-color: #fffcda73;}
+	
+	100% { fill: var(--Red-themecolor); color:var(--Red-themecolor); background-color: #fffcda;}
+  }
+
+
+
+/*
+@keyframes butfillred {
+	0% {
+	  background-color: rgba(199, 42, 0, 0.101);
+	  color: rgb(255, 252, 218);
+	  
+	}
+
+	10% {
+		background-color:rgba(199, 43, 0, 0.251);
+	    color: rgb(255, 252, 218);
+	}
+	  
+	100% {
+		background-color:rgb(199, 42, 0);
+	    color: rgb(255, 252, 218);
+	}
+  
+  }
+
+  @keyframes butfillblue {
+	0% {
+	  background-color: rgba(199, 42, 0, 0.101);
+	  color: rgb(223, 226, 229);
+	  
+	}
+
+	10% {
+		background-color:rgba(199, 43, 0, 0.251);
+	    color: rgb(255, 252, 218);
+	}
+	  
+	100% {
+		background-color:rgb(199, 42, 0);
+	    color: rgb(255, 252, 218);
+	}
+  
+  }	*/
+
+
+
+  @keyframes example {
+	0% {fill: var(--Red-themecolor); height: 1rem; color: var(--Red-themecolor);	background-color: #fffcdad2;}
+
+	50% {
+	background-color: #fffcda73;}
+	
+	100% { fill: var(--Red-themecolor); color:var(--Red-themecolor); background-color: #fffcda;}
+  }
+
+a:focus img,  
+a:hover img {
+	  opacity: 50%;
+}
+p {
+	font-size: .725rem;
+	line-height: 1.5;
+	font-weight: 400;
+}
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* https://www.freecodecamp.org/news/how-to-add-skip-to-main-content-links-to-a-website/ */
+
+
+.skip-to {
+	position: absolute;
+	left: -9999px;
+	z-index: 999;
+	padding: 1em;
+	background-color:var(--Red-themecolor);
+	color:var(--Cream-themecolor);
+	opacity: 0;
+  }
+
+ 
+  .skip-to:first-of-type:focus {
+	left: 10%;
+	transform: translateX(-10%);
+	opacity: 1;
+  }
+
+  .skip-to:nth-of-type(2):focus {
+	left: 20%;
+	transform: translateX(-20%);
+	opacity: 1;
+  }
+
+main nav.skip-to {
+	left: -9999px;
+	padding: 1em;
+	background-color:var(--Red-themecolor);
+	color:var(--Cream-themecolor);
+	opacity: 1;
+  }
+    
+
+  main nav.skip-to:focus 		{
+	left: 80%;
+	transform: translateX(-80%);
+	opacity: 1;
+  }
+
+
+  @keyframes example {
+	0% {fill: var(--Red-themecolor); height: 1rem; color: var(--Red-themecolor);	background-color: #fffcdad2;}
+
+	50% {
+	background-color: #fffcda73;}
+	
+	100% { fill: var(--Red-themecolor); color:var(--Red-themecolor); background-color: #fffcda;}
+  }
+
+
+
+
+
+
+
+
+
+  .skipnav:active,.skipnav:focus
+{
+animation-name: example1;
+animation-duration: 3s;
+animation-timing-function: ease-in-out;
+animation-iteration-count: 1;
+animation-fill-mode: forwards;
+
+
+}}
+@keyframes example1 {
+	0% {fill: var(--Red-themecolor); top: 0; height: 33,33%; color: var(--Red-themecolor);	background-color: #fffcdad2;}
+
+	50% {height: 66.66%;
+	background-color: #fffcda73;}
+	
+	100% { height: 100%; fill: var(--Red-themecolor); color:var(--Red-themecolor); background-color: #fffcda;}
+  }
+
+  
+
+
+
+
+
+
+
+
+
+}
+@keyframes example1 {
+	0% {fill: var(--Red-themecolor); top: 0; height: 33,33%; color: var(--Red-themecolor);	background-color: #fffcdad2;}
+
+	50% {height: 66.66%;
+	background-color: #fffcda73;}
+	
+	100% { height: 100%; fill: var(--Red-themecolor); color:var(--Red-themecolor); background-color: #fffcda;}
+  }
+
+  
+
+
+/* https://www.freecodecamp.org/news/how-to-add-skip-to-main-content-links-to-a-website/ */
+
+aside {
+	position: fixed;
+	left: 1rem;
+	top: 1rem;
+	z-index: 5;
+	background-color: #c72b00d1;
+	width: 20%;
+}
+body aside ul li {
+	margin-top: 1rem;
+  }
+  
+
+  body aside:first-child:first-of-type  {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+  }
+
+  body aside ul li{
+	border: solid .02rem var(--Cream-themecolor);
+  }
+  
+  body aside a {
+	padding: .5rem	;
+	color: var(--Cream-themecolor);
+  }
+
+  body aside:first-child:first-of-type {
+	padding: .5rem;
+  } 
+  
+
+
+
+.skip-to {
+	position: absolute;
+	left: -99px;
+	z-index: 999;
+	padding: 1em;
+	
+	opacity: 1;
+  }
+
+
+
+ 
+  .skip-to > *:focus  {
+	left: 80%;
+	transform: translateX(-30%);
+	opacity: 1;
+  }
+
+  -----------
+
+
+
+/* https://www.freecodecamp.org/news/how-to-add-skip-to-main-content-links-to-a-website/ */
+
+aside {
+	position: fixed;
+	left: 1rem;
+	top: 1rem;
+	z-index: 5;
+	background-color: #c72b00d1;
+	width: 20%;
+}
+body aside ul li {
+	margin-top: 1rem;
+  }
+  
+
+  body aside:first-child:first-of-type  {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+  }
+
+  body aside ul li{
+	border: solid .02rem var(--Cream-themecolor);
+  }
+  
+  body aside a {
+	padding: .5rem	;
+	color: var(--Cream-themecolor);
+  }
+
+  body aside:first-child:first-of-type {
+	padding: .5rem;
+  } 
+  
+
+
+
+.skip-to {
+	position: absolute;
+	left: -99px;
+	z-index: 999;
+	padding: 1em;
+	
+	opacity: 1;
+  }
+
+
+
+ 
+  .skip-to > *:focus  {
+	left: 80%;
+	transform: translateX(-30%);
+	opacity: 1;
+  }
+
+  aside {
+	position: fixed;
+	left: 1rem;
+	top: 1rem;
+	z-index: 5;
+	background-color: #c72b00d1;
+	width: 20%;
+}
+aside {
+	position: fixed;
+	left: 1rem;
+	top: 1rem;
+	z-index: 5;
+	background-color: #c72b00d1;
+	width: 20%;
+}
+aside {
+	position: fixed;
+	left: 1rem;
+	top: 1rem;
+	z-index: 5;
+	background-color: #c72b00d1;
+	width: 20%;
+
+
+    ------
+
+    @keyframes example1 {
+        0% {fill: var(--Red-themecolor); top: 0; height: 33,33%; color: var(--Red-themecolor);	background-color: #fffcdad2;}
+    
+        50% {height: 66.66%;
+        background-color: #fffcda73;}
+        
+        100% { height: 100%; fill: var(--Red-themecolor); color:var(--Red-themecolor); background-color: #fffcda;}
+      }
+    
+      body .skipnav ul li:focus,
+      body .skipnav a:focus {
+        border: solid 0.15rem var(--Red-themecolor);
+        padding: 1rem 0.5rem;
+        color: var(--Red-themecolor);
+        background-color: #fffcdada;
+        line-height: 1.5;
+        font-weight: 900;
+        min-height: 230%;
+        opacity: 1;
+        
+      }     animation-name: skipan;
+      animation: skipan ;
+      animation-duration: 5s;
+      animation-timing-function: ease-in-out;
+      animation-delay:  300ms; 
+      animation-iteration-count: 1;
