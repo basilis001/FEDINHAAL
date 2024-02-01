@@ -219,17 +219,38 @@ body .skipnav:first-child:first-of-type ul li,
 body .skipnav:first-child:first-of-type {
   display: flex;
   flex-flow: row nowrap;
+  flex-basis: auto;
 }
 
+body .skipnav:first-child:first-of-type ul li a{
+  width: 100%;
+}
 
+body .skipnav a {
+ 
+  border: solid 0.05rem var(--Cream-themecolor);
+  padding: 1.2rem 0.5rem;
+  color: var(--Cream-themecolor);
+  line-height: 1.5;
+  background-color: #c72b00d0;
+  font-size: 0.8rem;
+  margin: 0;
+  z-index: -1;
+  width: min-content;
+  align-self: flex-start;
+}
 
+body .skipnav a:focus {
+  z-index: 999;
+  align-self: stretch;
+  background-color: #fffcdad9;
+  border: solid 0.05rem var(--Red-themecolor);
+  color: var(--Red-themecolor);
+}
 
 /* https://www.freecodecamp.org/news/how-to-add-skip-to-main-content-links-to-a-website/ */
 /*
-body .skipnav :nth-child(-n + 3 of .skip-to) {
-  height: 4rem;
 
-}
 
 
 .skipnav {
